@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -42,10 +44,10 @@ public class MenuActivity extends AppCompatActivity {
 
     public void contactarSede (View v)
     {
-        String whatsApp = "com.whatsapp";
-        PackageManager pm = getPackageManager();
-        Intent intencion = pm.getLaunchIntentForPackage(whatsApp);
-        //Mensaje y número
-        startActivity(intencion);
+        String contact = "+573113873691"; // use country code with your phone number
+        String url = "https://api.whatsapp.com/send?phone=" + contact;
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 }
