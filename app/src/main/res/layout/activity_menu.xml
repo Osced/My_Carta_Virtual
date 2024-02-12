@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_sedes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="conocerSedes"
+            android:text="Sedes" />
+
+        <Button
+            android:id="@+id/button_contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="contactarSede"
+            android:text="Contáctanos" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_activity"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView_Entradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/entradas" />
+
+    <Button
+        android:id="@+id/button_Entradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="conocerEntradas"
+        android:text="@string/menu_entradas" />
+
+    <ImageView
+        android:id="@+id/imageView_Platos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platos" />
+
+    <Button
+        android:id="@+id/button_Platos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="conocerPlatos"
+        android:text="@string/menu_platos" />
+
+    <ImageView
+        android:id="@+id/imageView_Bebidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bebidas" />
+
+    <Button
+        android:id="@+id/button_Bebidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="conocerBebidas"
+        android:text="@string/menu_bebidas" />
+
+</LinearLayout>

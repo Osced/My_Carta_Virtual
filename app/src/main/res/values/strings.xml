@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Carta Virtual</string>
+    <string name="title_activity_sedes">SedesActivity</string>
+    <string name="menu_activity">Bienvenidos My Restaurant</string>
+    <string name="menu_entradas">Conoce nuestras deliciosas entradas</string>
+    <string name="menu_platos">Prueba nuestros exquisitos platos</string>
+    <string name="menu_bebidas">Refréscate con las bebidas de las casa</string>
+
+
+    <string name="menu_reserva">Reserva con nosotros</string>
+    <string name="reserva_sede">Sede</string>
+    <string name="reserva_personas">Cantidad personas</string>
+    <string name="reserva_fecha">Fecha reserva</string>
+    <string name="reserva_hora">Hora reserva</string>
+
+</resources>
